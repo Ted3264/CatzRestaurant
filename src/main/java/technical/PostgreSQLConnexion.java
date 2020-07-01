@@ -18,8 +18,8 @@ public class PostgreSQLConnexion {
 	private static final String PORT_MYSQL = "3306";
 	private static final String DATABASE_MYSQL = "hibernate";
 	private static final String URL_MYSQL = "jdbc:" + DRIVER_MYSQL + "://" + HOST_MYSQL + ":" + PORT_MYSQL + "/" + DATABASE_MYSQL;
-	private static final String USER_MYSQL = "postgres";
-	private static final String PASSWORD_MYSQL = "postgres";
+	private static final String USER_MYSQL = "root";
+	private static final String PASSWORD_MYSQL = "1234512345";
 	//
 	private static Connection connection = null;
 	public static String getUrl(boolean arg) {
