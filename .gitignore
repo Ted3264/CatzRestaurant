@@ -1,9 +1,0 @@
-.git
-*/.git/*
-*/.metadata/*
-*/.settings/*
-*/target/*
-.project
-.classpath
-
-/target/
