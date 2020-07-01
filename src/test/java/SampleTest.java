@@ -3,6 +3,6 @@ import org.junit.jupiter.api.Test;
 class SampleTest {
 	@Test
 	void test01() {
-		assertEquals("abc123","abc123");
+		assertEquals("abc1234","abc1234");
 	}
 }
