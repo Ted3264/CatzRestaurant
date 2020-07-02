@@ -19,3 +19,5 @@
 /temp
 target
 target/
+DBConnexion.java
+persistence.xml
