@@ -1,14 +1,13 @@
 package beans;
 public class User {
-	private String type; // Customer or Manager
+	private UserType type; // Customer or Manager
 	private Long idUser;
 	private String login;
 	private String password;
 	private String lastName;
 	private String firstName;
 	private String address;
-	// Constructeur
-	public User(String type, String login, String password, String lastName, String firstName, String address) {
+	public User(UserType type, String login, String password, String lastName, String firstName, String address) {
 		this.type = type;
 		this.login = login;
 		this.password = password;
@@ -17,8 +16,8 @@ public class User {
 		this.address = address;
 	}
 	public User() {}
-	public String getType() { return type; }
-	public void setType(String type) { this.type = type; }
+	public UserType getType() { return type; }
+	public void setType(UserType type) { this.type = type; }
 	public Long getIdUser() { return idUser; }
 	public void setIdUser(Long idUser) { this.idUser = idUser; }
 	public String getLogin() { return login; }
