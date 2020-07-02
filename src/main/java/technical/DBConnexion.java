@@ -4,7 +4,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-public class PostgreSQLConnexion {
+public class DBConnexion {
 	private static final String DRIVER_POSTGRESQL = "postgresql";
 	private static final String HOST_POSTGRESQL = "localhost";
 	private static final String PORT_POSTGRESQL = "5432";
@@ -41,7 +41,7 @@ public class PostgreSQLConnexion {
 			else connection = DriverManager.getConnection(URL_MYSQL, USER_MYSQL, PASSWORD_MYSQL);
 		} catch (SQLException | ClassNotFoundException ex) {
 			ex.printStackTrace();
-			Logger.getLogger(PostgreSQLConnexion.class.getName()).log(Level.SEVERE, (String) null, ex);
+			Logger.getLogger(DBConnexion.class.getName()).log(Level.SEVERE, (String) null, ex);
 			return null;
 		}
 		return connection;
